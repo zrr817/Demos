@@ -29,4 +29,4 @@ class Values(Enum):
         return cls(random.randint(11,14))
     
 if __name__ == '__main__':
-    print(Values.generate_value(), 'of', Cards.suit())
+    print(Values.generate_value().name, 'of', Cards.suit().name)
